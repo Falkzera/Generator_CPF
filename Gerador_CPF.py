@@ -17,7 +17,7 @@ while True:
 
     elif escolha.startswith('B'):
         while True:
-            CPF = input('Digite 9 digíto para gerar um CPF Válido: ').strip()
+            CPF = input('Digite 9 digíto para gerar um CPF Válido: ').strip().replace('.', '').replace('-', '')
             try:
                 if len(CPF) == 9:
                     break

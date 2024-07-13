@@ -1,7 +1,7 @@
 # Verificando se o usuário digitou corretamente.
 
 while True:
-    CPF = input('Digite um CPF: ').strip()
+    CPF = input('Digite um CPF: ').strip().replace('.', '').replace('-', '')
     try:
         if len(CPF) == 11:
             break
