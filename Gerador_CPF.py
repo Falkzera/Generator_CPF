@@ -9,10 +9,17 @@ while True:
     '[A] ou [B]: '            
     ).strip().upper()
 
+    # if escolha.startswith('A'):
+    #     numerador_aleatorio = random.randint(000000000, 999999999)
+    #     gerador_cpf = str(numerador_aleatorio)
+    #     CPF = gerador_cpf
+    #     break
+
     if escolha.startswith('A'):
-        numerador_aleatorio = random.randint(000000000, 999999999)
-        gerador_cpf = str(numerador_aleatorio)
-        CPF = gerador_cpf
+        numeros_aleatorios = ''
+        for _ in range(9):
+            numeros_aleatorios += str(random.randint(0, 9))
+            CPF = numeros_aleatorios
         break
 
     elif escolha.startswith('B'):
